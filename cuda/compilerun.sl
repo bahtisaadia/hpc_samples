@@ -19,5 +19,5 @@ echo "creating work dir $WORK_DIR `hostname`"
 cd $WORK_DIR
 
 
-nvcc sample.cu -o sample.o
-srun ./sample.o
+nvcc samplecpp.cu -o samplecpp.o
+srun ./samplecpp.o
