@@ -20,7 +20,7 @@ module load cp2k/ssmp/6.1
 export WORK_DIR=/data/$USER/${SLURM_JOB_ID}
 export INPUT_DIR=/home/$USER/myInput
 mkdir -p $WORK_DIR
-cp -r $INPUT_DIR/* $WORK_DIR/
+cp -R $INPUT_DIR/* $WORK_DIR/
 cd $WORK_DIR/
 
 echo "Running cp2k on $WORK_DIR with "
