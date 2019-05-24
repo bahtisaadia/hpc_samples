@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -J SPECX_GO
-#SBATCH --partition=mediumq
+#SBATCH --partition=shortq
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
