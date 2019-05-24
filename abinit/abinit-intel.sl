@@ -2,7 +2,7 @@
 #SBATCH -J abinit
 #SBATCH --ntasks=32
 #SBATCH --ntasks-per-core=1
-#SBATCH --partition=mediumq
+#SBATCH --partition=shortq
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
