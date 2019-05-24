@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J Go_run1
+#SBATCH -J SPECX_GO
 #SBATCH --partition=mediumq
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
