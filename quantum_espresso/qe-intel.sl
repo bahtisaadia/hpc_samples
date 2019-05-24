@@ -2,7 +2,7 @@
 #SBATCH -J QE_intel #jobname
 #SBATCH --ntasks=32 #number of cpus 
 #SBATCH --ntasks-per-core=1
-#SBATCH --partition=mediumq #partition depending on job duration
+#SBATCH --partition=shortq #partition depending on job duration
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
