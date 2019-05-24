@@ -1,5 +1,5 @@
 
-### Avant de lancer le script via sbatch , il faut réer un dossier pseudo pour y déposer vos fichiers UPF .  
+#### Avant de lancer le script via sbatch , il faut réer un dossier pseudo pour y déposer vos fichiers UPF .  
 ```
 mkdir /data/$USER/pseudo
 ```
