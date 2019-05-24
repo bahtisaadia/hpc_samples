@@ -1,4 +1,4 @@
-####Lancer le script go 
+#### Lancer le script go 
 ```
 sbatch specx_go.sl
 ```
@@ -6,9 +6,11 @@ sbatch specx_go.sl
 
 #### il faut pointer sur celui ci pour la deuxième étape , il suffit de modifier le script specx_dos.sl en changeant la variable WORK_DIR pour spécifier le chemin du dossier crée lors de la soumission du script go 
 
-...
-export WORK_DIR=/data/$USER/Akai1234 
-...
+> ...
+
+> export WORK_DIR=/data/$USER/Akai1234 
+
+> ...
 
 avant de le lancer : 
 ```
