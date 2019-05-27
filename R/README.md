@@ -6,7 +6,7 @@ déclarer la variable R_LIBS pour
 ```
 export R_LIBS=/data/$USER/myLibs/R_LIBS
 ```
-Installer les libraries nécassaire à votre calcul via la job install.sl en spécifiant la liste les commandes d'installation dans un fichier R ( exemple : requirements.R )
+Installer les libraries nécassaire à votre calcul via la job install.sl en spécifiant la liste les commandes d'installation dans un fichier R ( exemple : installPackages.R )
 
 ```
 sbatch install.sl
