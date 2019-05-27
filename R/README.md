@@ -12,7 +12,7 @@ Installer les libraries nécassaire à votre calcul via la job install.sl en sp�
 sbatch install.sl
 ```
 
-une fois le job d'installation terminé , vous pouvez lancer votre job de traitement de donées avec le script slurm   run.sl en spécifiant les commandes de traitement  dans un fichier R ( exemple : commandes.R) 
+une fois le job d'installation terminé , vous pouvez lancer votre job de traitement de donées avec le script slurm   run.sl en spécifiant les commandes de traitement  dans un fichier R ( exemple : commands.R) 
 
 ```
 sbatch run.sl
