@@ -22,3 +22,4 @@ cd build
 cmake  ../B5
 make
 ./exampleB5 exampleB5.in > exampleB5.out
+echo "Done"
