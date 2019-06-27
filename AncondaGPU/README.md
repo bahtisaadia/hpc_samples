@@ -12,8 +12,9 @@ Créer un environnement avec la version de python souhaité
 $conda create -n my_env_3.6 python=3.6
 ```
 Activer l’environnement 
+```
 $source activate my_env_3.6
- 
+```
 ### Installer les packages nécessaire sur la machine GPU
 Allouer une heure d’accès à la machine GPU
 ```
