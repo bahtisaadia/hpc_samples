@@ -1,4 +1,4 @@
-######  Créer votre  environnement Python 
+####  Créer votre  environnement Python 
 Créer le dossier /data/<username>/envs pour y créer les environnements conda et déclarer son chemin via la variable CONDA_ENVS_PATH
 ```
 $export CONDA_ENVS_PATH=/data/<username>/envs
@@ -14,7 +14,7 @@ $conda create -n my_env_3.6 python=3.6
 Activer l’environnement 
 $source activate my_env_3.6
  
-######  Installer les packages nécessaire sur la machine GPU
+####  Installer les packages nécessaire sur la machine GPU
 Allouer une heure d’accès à la machine GPU
 ```
 $salloc  -t 60 --nodelist=gpu01  
@@ -25,7 +25,7 @@ Se connecter à la machine GPU pour y installer les outils nécessaires
 ```$ssh gpu01
 $module load cuda91/toolkit/9.1.85
 ```
-### Pour le cas du deep learning , la librairie cudnn est déjà installé , pour l’utiliser :
+ Pour le cas du **Deep learning** , la librairie **cudnn** est déjà installé , pour l’utiliser :
 ```
 $module load cudnn/9.0_v7.4.2.24 
 ```
