@@ -41,5 +41,6 @@ $scancel 24200
 ### Lancer votre calcul 
 Une fois les outils nécessaires installés, créer le script de lancement du calcul souhaité 
 Le script doit contenir la condition suivante pour allouer le nœud GPU au job 
-                 #SBATCH --nodelist=gpu01
+  >   #SBATCH --gres=gpu:1
+
 
