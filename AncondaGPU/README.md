@@ -1,4 +1,4 @@
-####  Créer votre  environnement Python 
+### Créer votre  environnement Python 
 Créer le dossier /data/<username>/envs pour y créer les environnements conda et déclarer son chemin via la variable CONDA_ENVS_PATH
 ```
 $export CONDA_ENVS_PATH=/data/<username>/envs
@@ -14,7 +14,7 @@ $conda create -n my_env_3.6 python=3.6
 Activer l’environnement 
 $source activate my_env_3.6
  
-####  Installer les packages nécessaire sur la machine GPU
+### Installer les packages nécessaire sur la machine GPU
 Allouer une heure d’accès à la machine GPU
 ```
 $salloc  -t 60 --nodelist=gpu01  
@@ -37,7 +37,7 @@ et terminer l’allocation de la machine en annulant le job
 ```
 $scancel 24200
 ```
-######  Lancer votre calcul 
+### Lancer votre calcul 
 Une fois les outils nécessaires installés, créer le script de lancement du calcul souhaité 
 Le script doit contenir la condition suivante pour allouer le nœud GPU au job 
                  #SBATCH --nodelist=gpu01
