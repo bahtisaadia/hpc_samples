@@ -7,6 +7,7 @@
 #SBATCH -e %x-%j.err
 
 #load modules
+source /cm/shared/apps/intel/ips_2017/bin/compilervars.sh -arch intel64
 ml openmpi/gcc/64/1.10.7
 ml qe/openmpi/gcc/64/6.3.0
 ml slurm/17.11.8
