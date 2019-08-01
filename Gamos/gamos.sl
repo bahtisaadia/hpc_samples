@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -J Gamos
-#SBATCH --partition=defq
+#SBATCH --partition=shortq
 
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
