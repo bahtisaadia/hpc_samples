@@ -18,6 +18,6 @@ cd $WORK_DIR
 
 echo "Running FreeFem with at $WORK_DIR"
 
-FreeFem++ -nw sample.edp 
+FreeFem++ -nw sample.edp > sample.out
 
 echo "Done"
