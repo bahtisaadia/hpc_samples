@@ -3,6 +3,7 @@
 #SBATCH -n 1
 #SBATCH -N 1
 #SBATCH -p shortq
+#SBATCH --partition=gpu-testq #partition de test limitée a 2h, changer à gpu-prodq 
 #SBATCH --gres=gpu:1
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
