@@ -18,7 +18,7 @@ $source activate my_env_3.6
 ### Installer les packages nécessaire sur la machine GPU
 Allouer une heure d’accès à la machine GPU
 ```
-$salloc  -t 60 --nodelist=gpu01  
+$salloc  -t 60  --partition=gpu-testq  
 Submitted batch job 24200
 ```
 Se connecter à la machine GPU pour y installer les outils nécessaires 
@@ -41,4 +41,5 @@ $scancel 24200
 ### Lancer votre calcul 
 Une fois les outils nécessaires installés, créer le script de lancement du calcul souhaité 
 Le script doit contenir la condition suivante pour allouer le nœud GPU au job 
+  >   #SBATCH --partition=gpu-testq 
   >   #SBATCH --gres=gpu:1
