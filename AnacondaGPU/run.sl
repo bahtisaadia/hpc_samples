@@ -2,6 +2,7 @@
 #SBATCH --job-name=myGPUjob
 #SBATCH --ntasks=1
 #SBATCH -N 1
+#SBATCH --partition=gpu-testq
 #SBATCH --gres=gpu:1
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
