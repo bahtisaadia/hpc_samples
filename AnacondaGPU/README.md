@@ -15,7 +15,7 @@ Activer l’environnement
 ```
 $source activate my_env_3.6
 ```
-### Installer les packages nécessaire sur la machine GPU
+### Installer les packages nécessaires sur la machine GPU
 Allouer une heure d’accès à la machine GPU
 ```
 $salloc  -t 60  --partition=gpu-testq  
@@ -29,6 +29,11 @@ $module load cuda91/toolkit/9.1.85
  Pour le cas du **Deep learning** , la librairie **cudnn** est déjà installé , pour l’utiliser :
 ```
 $module load cudnn/9.0_v7.4.2.24 
+```
+ Installer les packages nécessaires  :
+```
+$conda install myPackage1
+$conda install myPackage2
 ```
 A la fin de l’installation, fermer la session ssh 
 ```              
