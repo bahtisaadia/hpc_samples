@@ -1,13 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name="GPU_test"
-#SBATCH -n 1
-#SBATCH -N 1
-#SBATCH -p shortq
 #SBATCH --partition=gpu-testq #partition de test limitée a 2h, changer à gpu-prodq 
 #SBATCH --gres=gpu:1
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
-
+module unload gcc/7.2.0
 module load cuda91/toolkit/9.1.85
 
 
