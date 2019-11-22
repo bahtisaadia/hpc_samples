@@ -1,8 +1,7 @@
 #!/bin/bash
-#SBATCH -J Gromacs
-#SBATCH --ntasks=32
-#SBATCH --ntasks-per-core=1
-#SBATCH --partition=shortq
+#SBATCH -J GromacsGPU
+#SBATCH --partition=gpu-prodq
+#SBATCH --gres=gpu:1
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
