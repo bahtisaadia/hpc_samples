@@ -6,7 +6,7 @@
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
-module load openmpi/intel-opa/gcc-hfi/64/2.1.2
+module load openmpi/gcc/64/2.0.2
 module load orca/openmpi/4.0.1.2
 
 
