@@ -8,7 +8,7 @@
 
 module load cuda91/toolkit
 module load cudnn
-export CONDA_ENVS_PATH=/data/$USER/env
+export CONDA_ENVS_PATH=/data/$USER/envs
 module load anaconda2
 source activate my_env_3.6
 unset PYTHONPATH
