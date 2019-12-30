@@ -30,10 +30,10 @@ $module load cuda91/toolkit/9.1.85
 ```
 $module load cudnn/9.0_v7.4.2.24 
 ```
- Installer les packages nécessaires  :
+ Installer les packages nécessaires (tensorflow par exemple) :
 ```
-$conda install myPackage1
-$conda install myPackage2
+$conda install tensorflow-gpu=1.12.0
+$conda install otherPackages
 ```
 A la fin de l’installation, fermer la session ssh 
 ```              
