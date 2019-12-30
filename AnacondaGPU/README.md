@@ -51,4 +51,6 @@ Le script doit contenir la condition suivante pour allouer le nœud GPU au job
   >   #SBATCH --gres=gpu:2
 
 A noter que la partition **gpu-testq** est limitée à 2 heures .elle est utile pour les jobs de tests.
-pour des jobs plus long, veuillez utuliser la partition **gpu-prodq** ( qui permet une durée de 7 jours max ) 
+pour des jobs plus long, veuillez utiliser la partition **gpu-prodq** ( qui permet une durée de 7 jours max ) 
+
+un exemple de script est disponible sur https://github.com/rahimbouchra/hpc_samples/blob/master/AnacondaGPU/run.sl
