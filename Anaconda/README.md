@@ -21,7 +21,7 @@ $source activate my_env_3.6
 ```
 $conda install package1
 $conda install package2
-```
+
 
 ### Lancer votre calcul 
 
