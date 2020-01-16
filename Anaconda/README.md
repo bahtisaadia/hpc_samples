@@ -27,4 +27,6 @@ $conda install package2
 
 Une fois les outils nécessaires installés, créer le script de lancement du calcul souhaité 
 
+celui ci active l'environnement précedement crée avant d executer le code python 
+
 un exemple de script est disponible sur https://github.com/rahimbouchra/hpc_samples/blob/master/Anaconda/run.sl
