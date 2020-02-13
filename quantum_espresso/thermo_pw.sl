@@ -1,4 +1,4 @@
-SBATCH -J QE_Thermo
+#SBATCH -J QE_Thermo
 #SBATCH --ntasks=16
 #SBATCH --ntasks-per-core=1
 #SBATCH --partition=defq
