@@ -6,9 +6,8 @@
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
-source /cm/shared/apps/intel/ips_2017/bin/compilervars.sh -arch intel64
-module load openmpi/gcc/64/1.10.7
-module load lammps/gcc/64/12Dec18
+module load openmpi/gcc/64/2.0.2
+module load lammps/gcc/64/7Aug2019
 
 export WORK_DIR=/data/$USER/LMP${SLURM_JOB_ID}
 export INPUT_DIR=$PWD/myInput
