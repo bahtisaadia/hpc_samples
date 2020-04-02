@@ -16,12 +16,12 @@ Activer l’environnement
 $source activate my_env_3.6
 ```
 
-```
+
  Installer les packages nécessaires  :
 ```
 $conda install package1
 $conda install package2
-
+```
 
 ### Lancer votre calcul 
 
