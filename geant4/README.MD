@@ -1,6 +1,19 @@
 Plusieurs versions de geant4 sont disponibles sur le cluster HPC-MARWAN .
 
-pour les consulter : 
+voici la commande qui permet de les les  : 
 ```
-module spider geant4
+**module spider geant4**
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  geant4/gcc/64:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     Versions:
+        geant4/gcc/64/mt-4.10.02.p03
+        geant4/gcc/64/mt-4.10.03.p03
+        geant4/gcc/64/mt-4.10.04.p03
+        geant4/gcc/64/mt-4.10.05.p01
+        geant4/gcc/64/4.10.01.p03
+        geant4/gcc/64/4.10.04.p02
+        geant4/gcc/64/4.10.05
+
 ```
