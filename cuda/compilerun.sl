@@ -5,7 +5,7 @@
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 module unload gcc/7.2.0
-module load cuda91/toolkit/9.1.85
+module load cuda10.1/toolkit
 
 
 export WORK_DIR=$PWD/${SLURM_JOB_ID}
