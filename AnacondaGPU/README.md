@@ -3,9 +3,9 @@ Créer le dossier /data/$USER/envs pour y créer les environnements conda et dé
 ```
 $export CONDA_ENVS_PATH=/data/$USER/envs
 ```
-Charger le module  anaconda2
+Charger le module  anaconda
 ```
-$module load anaconda2
+$module load anaconda3
 ```
 Créer un environnement avec la version de python souhaité
 ```
@@ -24,15 +24,15 @@ Submitted batch job 24200
 Se connecter à la machine GPU pour y installer les outils nécessaires 
 
 ```$ssh gpu01
-$module load cuda91/toolkit/9.1.85
+$module load cuda10.1/toolkit/10.1.2
 ```
  Pour le cas du **Deep learning** , la librairie **cudnn** est déjà installé , pour l’utiliser :
 ```
-$module load cudnn/9.0_v7.4.2.24 
+$module load cudnn/10.1_v7.6.5.32
 ```
  Installer les packages nécessaires (tensorflow par exemple) :
 ```
-$conda install tensorflow-gpu=1.12.0
+$conda install tensorflow-gpu
 $conda install otherPackages
 ```
 A la fin de l’installation, fermer la session ssh 
