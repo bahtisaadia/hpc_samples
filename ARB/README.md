@@ -1,9 +1,10 @@
 
-Vu le fait que l’application ARB fonctionne en mode graphique, on vous demande de lancer l’application dans un nœud de calcul libre en exécutant les étapes suivantes :
+
+Vu le fait que l’application ARB fonctionne en mode graphique, il faut d'abord réserver un nœud de calcul libre et s'y connecter en mode X forwading . ci dessous les étapes nécessaires : 
 ```
 $salloc -n1 
 ```
-Cette commande permet l’allocation d’un nœud de calcul libre . par défaut , il sera alloué pour une durée de 2 heure (partition defq), vous pouvez la changer en spécifiant la partition avec l’option « -p » 
+Cette commande permet l’allocation d’un nœud de calcul libre . par défaut , il sera alloué pour une durée de 2 heure (partition defq), changer  la partition avec l’option « -p » selon la durée estimée du calcul 
 ```
 $squeue --job 65467 (JOBID donnée par la commande précédente) 
 ```
@@ -19,8 +20,9 @@ Puis lancer l’application
 ```
 $arb
 ```
-N’oubliez pas de fermer la session à la fin du calcul pour libérer les ressources : 
+ fermer la session à la fin du calcul pour libérer les ressources : 
 ```
 $exit
 ```
+
 
