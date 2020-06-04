@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -J R_install
-#SBATCH --partition=shortq
+#SBATCH --partition=defq
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
