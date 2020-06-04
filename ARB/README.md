@@ -1,4 +1,4 @@
-
+''Lancer ARB en mode Interactif 
 
 Vu le fait que l’application ARB fonctionne en mode graphique, il faut d'abord réserver un nœud de calcul libre et s'y connecter en mode X forwading . ci dessous les étapes nécessaires : 
 ```
