@@ -6,7 +6,8 @@
 #SBATCH -e %x-%j.err
 
 #load gromacs
-module load cuda91/toolkit/9.1.85
+module load cuda10.1/toolkit
+
 source /cm/shared/apps/intel/ips_2017/bin/compilervars.sh -arch intel64
 source /cm/shared/apps/gromacs/intel/64/2018.3/bin/GMXRC
 
