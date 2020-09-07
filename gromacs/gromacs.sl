@@ -2,6 +2,7 @@
 #SBATCH -J Gromacs
 #SBATCH --partition=shortq
 #SBATCH --ntasks=32
+#SBATCH --cpus-per-task=1
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
@@ -18,6 +19,12 @@ cd $WORK_DIR
 
 
 echo "Running Gromacs at $WORK_DIR"
+if [ -n "$SLURM_CPUS_PER_TASK" ]; then
+  omp_threads=$SLURM_CPUS_PER_TASK
+else
+  omp_threads=1
+fi
+export OMP_NUM_THREADS=$omp_threads
 
 mpirun -np $SLURM_NTASKS  gmx_mpi pdb2gmx -f 1ubq.pdb -o protein.gro 
 
