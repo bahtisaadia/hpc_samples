@@ -26,6 +26,11 @@ else
 fi
 export OMP_NUM_THREADS=$omp_threads
 
-mpirun -np $SLURM_NTASKS  gmx_mpi pdb2gmx -f 1ubq.pdb -o protein.gro 
+gmx_mpi pdb2gmx -f 1ubq.pdb -o protein.gro 
+
+#some other gromacs steps ... 
+
+mpirun -np $SLURM_NTASKS  gmx_mpi mdrun -v -deffnm em
+
 
 echo "Done"
