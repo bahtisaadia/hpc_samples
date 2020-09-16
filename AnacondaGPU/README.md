@@ -23,7 +23,8 @@ Submitted batch job 24200
 ```
 Se connecter à la machine GPU pour y installer les outils nécessaires 
 
-```$ssh gpu01
+```
+$ssh gpu01
 $module load cuda10.1/toolkit/10.1.243
 ```
  Pour le cas du **Deep learning** , la librairie **cudnn** est déjà installé , pour l’utiliser :
