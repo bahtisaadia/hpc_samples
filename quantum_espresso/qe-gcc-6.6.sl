@@ -19,7 +19,7 @@ cd $WORK_DIR
 
 #run
 echo "Running Quantum Espresso with $SLURM_NTASKS at $WORK_DIR"
-
+export OMP_NUM_THREADS=1
 mpirun -np $SLURM_NTASKS pw.x -i myInputFile.in > myOutputFile.out
 
 echo "Done"
