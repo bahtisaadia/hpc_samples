@@ -8,6 +8,7 @@
 
 #load QuantumESPRESSO
 module load QuantumESPRESSO/6.6-foss-2019b
+export OMP_NUM_THREADS=1
 
 #prepare work dir
 export WORK_DIR=/data/$USER/Qe${SLURM_JOB_ID}
@@ -19,7 +20,7 @@ cd $WORK_DIR
 
 #run
 echo "Running Quantum Espresso with $SLURM_NTASKS at $WORK_DIR"
-export OMP_NUM_THREADS=1
+
 mpirun -np $SLURM_NTASKS pw.x -i myInputFile.in > myOutputFile.out
 
 echo "Done"
