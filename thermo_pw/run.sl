@@ -1,8 +1,6 @@
 #!/bin/bash
 #SBATCH -J QE_thermo
-#SBATCH --nodes=1 #for testing  , remove if you don t need processes to run on same node
-#SBATCH --ntasks-per-node=4 # for testing , use higher  ( max is 80 for all user jobs  )
-#SBATCH --ntasks-per-core=4
+#SBATCH --ntasks-per-core=4 # for testing , use higher  ( max is 80 for all user jobs  )
 #SBATCH --partition=defq #for testing , replace with production partition shortq mediumq or longq
 #SBATCH --time=0-01:00:00 # for testing , replace with estimated duration  days-hh:mm:ss
 #SBATCH -o %x-%j.out
