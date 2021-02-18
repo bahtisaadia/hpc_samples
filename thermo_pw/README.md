@@ -1,7 +1,7 @@
 
 Testé avec les exemples fournis avec thermo_pw .
 
-Le script  run_exemple a été  modifié  pour spécifier les variables d'environnement relatif à l'installation HPC-MARWAN :
+Le script  run_exemple a été  modifié  pour spécifier les variables d'environnement relatives à l'installation HPC-MARWAN :
 
 ```
 BIN_DIR=$APPS_DIR/qe/openmpi/gcc/64/6.6/bin
