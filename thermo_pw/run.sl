@@ -8,7 +8,8 @@
 #SBATCH -o %x-%j.out
 #SBATCH -e %x-%j.err
 
-module load qe/openmpi/gcc/64/6.6-with_thermo_pw
+module load thermo_pw/1.4.0-qe6.6
+
 export OMP_NUM_THREADS=1
 
 #prepare work dir
