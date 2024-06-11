@@ -9,7 +9,7 @@
 #load modules
 module load intel2021/mpi intel2021/mkl intel2021/compiler OpenMPI/4.1.4-GCC-12.2.0 
 
-module load QuantumEspresso/intel/7.0_d3q
+module load QuantumESPRESSO/intel/7.0_d3q
 
 
 #prepare working directory 
